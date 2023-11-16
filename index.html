@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,14 +6,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>sumit-doveloper portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         * {
             margin: 0;
             padding: 0;
+        }
+        .d-grid{
+            height: 25px;
+            justify-content: space-around;
         }
 
         body {
@@ -71,24 +79,38 @@
 
         .leftsection {
             font-size: 2rem;
+           
+            
         }
 
-        .leftsection .buttons {
-            padding: 50px 0;
-        }
+
+        .button-container {
+        display: grid;
+        gap: 4px;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        
+    }
+       
+
+    
+    .button-container button:nth-child(2) {
+        justify-content:below;
+    }
 
         .leftsection .btn {
-            padding: 12px;
+            padding: 10px;
             background-color: #1e2167;
             color: white;
-            border: 2px solid white;
+            border: 1.5px solid white;
             font-size: 20px;
             cursor: pointer;
+            
         }
 
         .rightsection img {
-            width: 80%;
-            margin: 50px 0;
+            width: 90%;
+            margin: 70px 0;
         }
 
         .purple {
@@ -117,7 +139,7 @@
             background-color: white;
             width: 80vw;
             height: 2px;
-            margin: 56px 0;
+            margin: 30px 0;
             display: flex;
         }
 
@@ -130,16 +152,16 @@
         }
 
         .image-top {
-            width: 23px;
+            width: 22px;
             position: relative;
-            top: -32px;
-            left: -9px;
+            top: -100px;
+            left: -8px;
         }
 
         .vertical-title {
             position: relative;
             top: 76px;
-            width: 120px;
+            width: 110px;
         }
 
         .vertical-desc {
@@ -156,7 +178,7 @@
 
         .footer {
             display: flex;
-            padding: 80px 60px;
+            padding: 70px 60px;
             justify-content: space-evenly;
 
         }
@@ -166,7 +188,7 @@
         }
 
         .footer>div {
-            width: 130px;
+            width: 120px;
         }
 
         footer .footer-right {
@@ -174,62 +196,81 @@
             color: gray;
             padding: 12px 0;
         }
+        .anch {
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+       .btn a.custom{
+            color:white;
+        }
+        a:active{
+            color:white;
+        }
+
     </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="left"> sumit's portfolio</div>
+            <div class="left"><i class="fa-solid fa-user-secret"></i> Sumit's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Project</a></li>
-                    <li><a href="/">Contact me</a></li>
+                    <li><a href="/" id="homeLink"><i class="fa-solid fa-house"></i> Home</a></li>
+<li><a href="/" id="aboutLink">About</a></li>
+<li><a href="/" id="skillLink">Services</a></li>
+<li><a href="/" id="projectLink"><i class="fa-brands fa-r-project"></i> Project</a></li>
+<li><a href="#" id="contactLink">Contact me</a></li>
+
                 </ul>
             </div>
         </nav>
     </header>
     <main>
+    
         <section class="firstsection">
             <div class="leftsection">
-                Hi,my name is sumit
-                <div>and i am a web developer</div>
+                Hi, my Name is <span class="purple">Sumit</span>
+                And i am a <span class="purple">Web Developer</span>
                 <span id="element"></span>
-                <div class="buttons">
-                    <button class="btn">download resume</button>
-                    <button class="btn">visit Github</button>
+                <br>
+                <div class="button-container">
+                    <button class="btn">Download Resume</button>
+
+                    <button class="btn" id="github Button">
+                      <a href="https://github.com/" class ="custom" target="_blank">Visit GitHub </a></button>
+    
                 </div>
+                
             </div>
             <div class="rightsection">
-                <img class="image" src="./sumit.png" alt="photo">
+                <img class="image" src="./am.png" alt="photo">
+                   
             </div>
         </section>
-
-        <hr>
+    
         <section class="secondsection">
             <span class="text-gray">what i have done so far</span>
+        
             <h1>work experience</h1>
             <div class="box">
                 <div class="vertical">
-                    <img class="image-top" scr="pngwing.com" alt="">
                     <div class="vertical-title">
-                        html developer(2022-2023)
+                          Html Developer(2022-2023)
                     </div>
                     <div class="vertical-desc">
-                        HTML Coding: They use HTML tags and elements to define the structure of web pages, including
-                        headings, paragraphs,
-                        lists, links, images, forms, and more.
+                        HTML Coding: They use HTML tags and elements to define the structure of web pages, including headings, paragraphs,lists, links, images, forms, and more.
                         Continuous Learning: HTML web developers stay updated with the latest trends and
                         technologies to improve their skills and deliver high-quality websites.
                     </div>
                 </div>
                 <div class="vertical">
-                    <img class="image-top" scr="PngItem_1127587.png" alt="">
+                    <img class="image-top" scr="" alt="">
                     <div class="vertical-title">
-                        css web developer(2022-2023)
+                        CSS Web Developer(2022-2023)
                     </div>
                     <div class="vertical-desc">
                         Styling Web Elements:They control aspects such as fonts, colors, spacing, borders, backgrounds,
@@ -241,7 +282,7 @@
                     </div>
                 </div>
                 <div class="vertical">
-                    <img class="image-top" scr="PngItem_1127587.png" alt="">
+                    <img class="image-top" scr="" alt="">
                     <div class="vertical-title">
                         java script web developer (2022-2023)
                     </div>
@@ -254,7 +295,7 @@
                     </div>
                 </div>
                 <div class="vertical">
-                    <img class="image-top" scr="PngItem_1127587.png" alt="">
+                    <img class="image-top" scr="" alt="">
                     <div class="vertical-title">
                         c language(2022-2023)
                     </div>
@@ -265,55 +306,71 @@
                         for direct manipulation of memory and hardware resources.
                     </div>
                 </div>
-
-
-
             </div>
         </section>
         <footer>
             <div class="footer">
-                <div class="footer-first">
-                    <h3>sumit's developer portfolio</h3>
+                <div class="footer-first" id="footerFirst">
+                    <h3>Sumit's Developer Portfolio</h3>
                 </div>
-                <div class="footer-second">
+                <div class="footer-second" id="footerSecond">
                     <ul>
-                        <li>home</li>
-                        <li>about</li>
-                        <li>link</li>
-                        <li>contact</li>
+                        <li><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li><i class="fa-solid fa-address-card"></i>About</a></li>
+                        <li><i class="fa-solid fa-link"></i>Link</a></li>
+                        <li><i class="fa-brands fa-connectdevelop"></i>Contact</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-third">
+        
+                <div class="footer-third" id="footerThird">
                     <ul>
-                        <li>home</li>
-                        <li>about</li>
-                        <li>link</li>
-                        <li>contact</li>
+                        <li><i class="fa-solid fa-info"></i>More info</li>
+                        <li><i class="fa-brands fa-teamspeak"></i>Term</li>
+                        <li><i class="fa-brands fa-hire-a-helper"></i>Help</li>
+                        <li><i class="fa-regular fa-message"></i>SMS</li>
                     </ul>
                 </div>
-                <div class="footer-fourth">
+                <div class="footer-fourth" id="footerFourth">
                     <ul>
-                        <li>home</li>
-                        <li>about</li>
-                        <li>link</li>
-                        <li>contact</li>
+                        <li><i class="fa-brands fa-facebook"></i>facebook</li>
+                        <li><a class="anch" href="https://instagram.com/sumit4jain?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                        <li><a class="anch" href="https://www.linkedin.com/in/sumit-jain-1274bb256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i>linkedin</a></li>
+                        <li><i class="fa-brands fa-youtube"></i>Youtube</li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-right">
-                cpoyright&#169; www.sumitportfolio.com | All right reserved
+            <div class="footer-right" id="footerRight">
+                copyright&#169; www.sumitportfolio.com | All right reserved
             </div>
         </footer>
+        
     </main>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
-    <script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> 
+    <!--Setup and start animation! -->
+         <script>
         var typed = new Typed('#element', {
-            strings: ['ewb developer.', 'graphic design.'],
+            strings: ['web developer.', 'graphic design.','video editor.'],
             typeSpeed: 50,
         });
-    </script>
+     </script>
+     <script>
+        document.getElementById("githubButton").addEventListener("click", function() {
+          window.location.href = "https://github.com";
+        });
+      </script>
+<script>
+    document.getElementById("contactLink").addEventListener("click", function() {
+      // Your code to handle the click event goes here
+      // For example, you can open a contact form or perform other actions.
+      // You can replace the comment with the desired code.
+    });
+  </script>
+  <script>
+    document.getElementById("contactLink").addEventListener("click", function() {
+        var contactInfo = "Contact Information: Your contact information goes here"; // Replace with your actual contact information
+        alert(contactInfo); // You can replace this with any action you want to take when the "Contact me" link is clicked
+    });
+</script>
 
 </body>
 
